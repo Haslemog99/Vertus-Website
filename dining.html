@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dining &amp; Amenities — Vertus</title>
+  <meta name="description" content="Dining and amenities at Vertus: restaurant, bar, breakfast, and leisure facilities. Details of what the hotel offers, all in one place.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dining &amp; Amenities — Vertus">
+  <meta property="og:description" content="Restaurant, bar, breakfast and leisure facilities at Vertus.">
+  <meta property="og:image" content="assets/img/dining-restaurant.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <p class="alpha-note">Alpha preview — placeholder photos and <span class="tbd">highlighted facts</span> are awaiting the real assets (plan §6).</p>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">Vertus</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms &amp; Suites</a></li>
+          <li><a href="dining.html" aria-current="page">Dining &amp; Amenities</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav-cta"><a class="btn btn--solid" href="contact.html#enquiry">Check availability</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--page">
+      <img class="hero__img" src="assets/img/dining-restaurant.svg" alt="Placeholder for a restaurant photograph" fetchpriority="high">
+      <div class="hero__content">
+        <h1>Dining &amp; Amenities</h1>
+        <p class="hero__tagline">Sections below are assumed — they'll be trimmed to what Vertus actually offers.</p>
+      </div>
+    </section>
+
+    <!-- Dining -->
+    <section class="section">
+      <div class="container">
+        <div class="reveal">
+          <span class="eyebrow">Dining</span>
+          <h2>Eat &amp; drink</h2>
+        </div>
+        <div class="grid grid--3">
+          <article class="card reveal">
+            <img src="assets/img/dining-restaurant.svg" alt="Placeholder for a restaurant photograph" loading="lazy">
+            <div class="card__body">
+              <h3>Restaurant</h3>
+              <p>Placeholder: cuisine, signature dishes, atmosphere. <span class="tbd">Opening hours</span></p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <img src="assets/img/dining-bar.svg" alt="Placeholder for a bar photograph" loading="lazy">
+            <div class="card__body">
+              <h3>Bar</h3>
+              <p>Placeholder: drinks list highlights, terrace or lounge setting. <span class="tbd">Opening hours</span></p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <img src="assets/img/dining-breakfast.svg" alt="Placeholder for a breakfast photograph" loading="lazy">
+            <div class="card__body">
+              <h3>Breakfast</h3>
+              <p>Placeholder: buffet or à la carte, local specialities. <span class="tbd">Included in the rate?</span></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leisure amenities -->
+    <section class="section section--sand">
+      <div class="container">
+        <div class="reveal">
+          <span class="eyebrow">Leisure</span>
+          <h2>Unwind</h2>
+          <p class="lede">Pool, gym and spa are assumed for the alpha — any that don't exist get cut, anything missing gets added.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card reveal">
+            <img src="assets/img/amenity-pool.svg" alt="Placeholder for a pool photograph" loading="lazy">
+            <div class="card__body">
+              <h3>Pool</h3>
+              <p>Placeholder: indoor/outdoor, heated, hours. <span class="tbd">Exists?</span></p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <img src="assets/img/amenity-gym.svg" alt="Placeholder for a gym photograph" loading="lazy">
+            <div class="card__body">
+              <h3>Gym</h3>
+              <p>Placeholder: equipment, access hours. <span class="tbd">Exists?</span></p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <img src="assets/img/amenity-spa.svg" alt="Placeholder for a spa photograph" loading="lazy">
+            <div class="card__body">
+              <h3>Spa &amp; wellness</h3>
+              <p>Placeholder: treatments, sauna, booking info. <span class="tbd">Exists?</span></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Practical amenities -->
+    <section class="section amenities-band">
+      <div class="container">
+        <div class="reveal">
+          <span class="eyebrow">The practical stuff</span>
+          <h2>Included with every stay</h2>
+        </div>
+        <ul class="reveal">
+          <li><span class="amenity-mark" aria-hidden="true">W</span>Free Wi-Fi</li>
+          <li><span class="amenity-mark" aria-hidden="true">P</span>Parking <span class="tbd">on site?</span></li>
+          <li><span class="amenity-mark" aria-hidden="true">A</span>Airport pickup <span class="tbd">?</span></li>
+          <li><span class="amenity-mark" aria-hidden="true">C</span>24-hour reception <span class="tbd">?</span></li>
+          <li><span class="amenity-mark" aria-hidden="true">L</span>Laundry service <span class="tbd">?</span></li>
+          <li><span class="amenity-mark" aria-hidden="true">K</span>Family friendly <span class="tbd">?</span></li>
+          <li><span class="amenity-mark" aria-hidden="true">D</span>Pets <span class="tbd">policy?</span></li>
+          <li><span class="amenity-mark" aria-hidden="true">S</span>Non-smoking <span class="tbd">policy?</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--accent cta-banner">
+      <div class="container reveal">
+        <h2>Stay with us</h2>
+        <p class="lede" style="margin-inline:auto">Pick your dates and send an enquiry — the hotel confirms by email or phone.</p>
+        <a class="btn btn--light" href="contact.html#enquiry">Check availability</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <h3>Vertus</h3>
+          <p>Placeholder footer blurb — one sentence about the hotel and its city, pending the facts list.</p>
+          <ul>
+            <li><span class="tbd">Full address, city, country</span></li>
+            <li>Phone: <span class="tbd">+00 000 000 0000</span></li>
+            <li>Email: <span class="tbd">reservations@vertus.example</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="rooms.html">Rooms &amp; Suites</a></li>
+            <li><a href="dining.html">Dining &amp; Amenities</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Good to know</h3>
+          <ul>
+            <li>Check-in: <span class="tbd">from 14:00</span></li>
+            <li>Check-out: <span class="tbd">by 11:00</span></li>
+            <li>Cancellation: <span class="tbd">policy pending</span></li>
+            <li>Socials: <span class="tbd">links pending</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__legal">
+        <span>&copy; 2026 Vertus. All rights reserved.</span>
+        <span>Alpha preview — not the final site.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

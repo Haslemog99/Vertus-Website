@@ -1,0 +1,5 @@
+# Alpha placeholder: replace TBD-DOMAIN.example with the real domain at Live phase
+User-agent: *
+Allow: /
+
+Sitemap: https://TBD-DOMAIN.example/sitemap.xml
