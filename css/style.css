@@ -455,7 +455,11 @@ a { color: var(--accent); }
   gap: 0.85rem;
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 40rem) {
+  .amenity-links { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 62rem) {
   .amenity-links { grid-template-columns: repeat(4, 1fr); }
 }
 
