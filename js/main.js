@@ -62,11 +62,8 @@
     });
   }
 
-  /* Enquiry form (alpha stub — wired to a relay service at Live phase) ---- */
-  var form = document.querySelector(".enquiry-form");
-
-  if (form) {
-    /* Check-out can't be before check-in */
+  /* Enquiry / reserve forms (alpha stub — wired at Live phase) ------------ */
+  document.querySelectorAll(".enquiry-form").forEach(function (form) {
     var checkin = form.querySelector("#checkin");
     var checkout = form.querySelector("#checkout");
     if (checkin && checkout) {
@@ -79,17 +76,22 @@
       });
     }
 
+    var dateField = form.querySelector("#reserve-date");
+    if (dateField) {
+      dateField.min = new Date().toISOString().split("T")[0];
+    }
+
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var success = document.createElement("p");
       success.className = "form-success";
       success.setAttribute("role", "status");
-      success.textContent =
-        "Alpha preview: your enquiry was not sent anywhere yet. At the Live phase this form connects to the hotel's inbox via a form relay service.";
+      success.textContent = form.dataset.success
+        || "Alpha preview: your enquiry was not sent anywhere yet. At the Live phase this form connects to the hotel's inbox via a form relay service.";
       form.replaceWith(success);
       success.scrollIntoView({ behavior: "smooth", block: "center" });
     });
-  }
+  });
 
   /* Reveal on scroll (respects prefers-reduced-motion via CSS) ------------ */
   var revealEls = document.querySelectorAll(".reveal");

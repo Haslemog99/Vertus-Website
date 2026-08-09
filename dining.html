@@ -53,37 +53,107 @@
           <h2>Eat &amp; drink</h2>
         </div>
         <div class="grid grid--3">
-          <article class="card reveal">
+          <article class="card reveal" id="roka" style="scroll-margin-top:5.5rem">
             <img src="assets/img/dining-restaurant.webp" alt="ROKA dining room with jewel-toned seating" loading="lazy" width="1400" height="932">
             <div class="card__body">
               <h3>ROKA</h3>
               <p>The hotel restaurant — an airy dining room with teal banquettes, soft lantern light and space for a proper dinner. <span class="tbd">Cuisine &amp; hours</span></p>
+              <a class="btn btn--solid" href="#reserve">Reserve a table</a>
+              <p style="margin:0.75rem 0 0"><a href="gallery.html#roka">See ROKA in the gallery</a></p>
             </div>
           </article>
-          <article class="card reveal">
+          <article class="card reveal" id="bar" style="scroll-margin-top:5.5rem">
             <img src="assets/img/dining-bar.webp" alt="Hotel bar with gold accents and velvet chairs" loading="lazy" width="1400" height="933">
             <div class="card__body">
               <h3>Bar</h3>
               <p>A long gold-trimmed bar and lounge seating for a drink before dinner — or instead of going out. <span class="tbd">Opening hours</span></p>
+              <a class="btn btn--ghost" href="gallery.html#bar">View gallery</a>
             </div>
           </article>
-          <article class="card reveal">
+          <article class="card reveal" id="lounge" style="scroll-margin-top:5.5rem">
             <img src="assets/img/dining-lounge.webp" alt="Lounge seating with yellow sofas beside the bar" loading="lazy" width="1400" height="933">
             <div class="card__body">
               <h3>Lounge</h3>
               <p>Bright lounge space next to the bar — sofas, café tables and windows for daytime or evening. <span class="tbd">Breakfast served here?</span></p>
+              <a class="btn btn--ghost" href="gallery.html#bar">View gallery</a>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section--sand">
+    <section class="section section--sand" id="reserve" style="scroll-margin-top:5.5rem">
+      <div class="container">
+        <div class="reveal">
+          <span class="eyebrow">ROKA</span>
+          <h2>Reserve a table</h2>
+          <p class="lede">Tell us when you’d like to dine — the restaurant confirms by phone. Or call <a href="tel:+2349128888820">+234 912 888 8820</a>.</p>
+        </div>
+        <form class="enquiry-form reveal" data-success="Alpha preview: your table request was not sent yet. At the Live phase this form reaches ROKA / the hotel by email. Prefer a quick answer? Call or WhatsApp +234 912 888 8820.">
+          <div class="form-row form-row--2">
+            <div class="field">
+              <label for="reserve-date">Date</label>
+              <input type="date" id="reserve-date" name="date" required>
+            </div>
+            <div class="field">
+              <label for="reserve-time">Time</label>
+              <select id="reserve-time" name="time" required>
+                <option value="">Select a time</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="13:00">1:00 PM</option>
+                <option value="14:00">2:00 PM</option>
+                <option value="18:00">6:00 PM</option>
+                <option value="19:00">7:00 PM</option>
+                <option value="20:00">8:00 PM</option>
+                <option value="21:00">9:00 PM</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row form-row--2">
+            <div class="field">
+              <label for="reserve-guests">Guests</label>
+              <select id="reserve-guests" name="guests" required>
+                <option value="1">1 guest</option>
+                <option value="2" selected>2 guests</option>
+                <option value="3">3 guests</option>
+                <option value="4">4 guests</option>
+                <option value="5">5 guests</option>
+                <option value="6+">6 or more</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="reserve-name">Your name</label>
+              <input type="text" id="reserve-name" name="name" autocomplete="name" required>
+            </div>
+          </div>
+          <div class="form-row form-row--2">
+            <div class="field">
+              <label for="reserve-phone">Phone</label>
+              <input type="tel" id="reserve-phone" name="phone" autocomplete="tel" required>
+            </div>
+            <div class="field">
+              <label for="reserve-email">Email (optional)</label>
+              <input type="email" id="reserve-email" name="email" autocomplete="email">
+            </div>
+          </div>
+          <div class="field">
+            <label for="reserve-notes">Special requests (optional)</label>
+            <textarea id="reserve-notes" name="notes" placeholder="Occasion, dietary needs, preferred seating…"></textarea>
+          </div>
+          <div>
+            <button class="btn btn--solid" type="submit">Request table</button>
+          </div>
+          <p class="form-note">Alpha note: UI-only for now. At Live phase this reaches the hotel. You can also WhatsApp <a href="https://wa.me/2349128888820">+234 912 888 8820</a>.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
       <div class="container">
         <div class="reveal">
           <span class="eyebrow">Leisure</span>
-          <h2>The pool</h2>
-          <p class="lede">A private courtyard pool with shaded seating and tropical planting — quiet, close, and for guests only.</p>
+          <h2 id="pool" style="scroll-margin-top:5.5rem">The pool</h2>
+          <p class="lede">A private courtyard pool with shaded seating and tropical planting — quiet, close, and for guests only. <a href="gallery.html#pool">View pool gallery</a></p>
         </div>
         <div class="grid grid--2">
           <article class="card reveal">
