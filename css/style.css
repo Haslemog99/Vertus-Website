@@ -6,14 +6,15 @@
    ========================================================================== */
 
 :root {
-  --cream: #faf7f2;
-  --sand: #efe9e0;
-  --sand-deep: #ddd4c6;
-  --ink: #221e19;
-  --ink-soft: #5c554a;
-  --accent: #2e4b42;      /* deep green — placeholder accent */
-  --accent-soft: #43655a;
-  --line: #d9d1c3;
+  /* Palette pulled from the photography: charcoal exterior, teal room accents, warm wood lobby */
+  --cream: #f7f4ef;
+  --sand: #ebe4d8;
+  --sand-deep: #d4cbb9;
+  --ink: #1f2422;
+  --ink-soft: #5a5f5c;
+  --accent: #1f4a43;      /* deep teal from room textiles */
+  --accent-soft: #2f6a60;
+  --line: #d5cec2;
   --radius: 6px;
   --pad: clamp(1.25rem, 5vw, 2.5rem);
   --font-display: "Cormorant Garamond", Georgia, serif;
@@ -524,7 +525,15 @@ a { color: var(--accent); }
 
 @media (min-width: 56rem) { .location-block { grid-template-columns: 1fr 1fr; align-items: center; } }
 
-.location-block img { border-radius: var(--radius); width: 100%; }
+.location-block img,
+.map-embed {
+  border-radius: var(--radius);
+  width: 100%;
+  border: 0;
+  aspect-ratio: 16 / 9;
+  min-height: 16rem;
+  background: var(--sand);
+}
 
 .contact-list {
   list-style: none;

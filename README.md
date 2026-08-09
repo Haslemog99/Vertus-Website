@@ -10,18 +10,20 @@ python3 -m http.server 8080
 
 ## Status: alpha
 
-Structure and flow are complete; the site is deliberately unfinished in places
-(see the plan's "rule of the method"). Two kinds of placeholder are in use:
+Structure and flow are complete; real photography is wired in. What's still
+placeholder:
 
-- **Images** — labelled grey SVGs in `assets/img/`, one per shot on the photo
-  checklist. Swap each for the real photo (same filename, or update the
-  references) once photography arrives.
 - **Facts** — every unknown fact is wrapped in a `<span class="tbd">` and shows
-  with a yellow highlight on the page, so nothing pending can hide. Search the
+  with a yellow highlight (address, rates, contacts, policies). Search the
   HTML for `class="tbd"` to find them all.
+- **Map** — still a labelled SVG until the address arrives.
+- **Room type names** — Classic / Deluxe / Suite are assumed from the photos;
+  rename once the official list is confirmed.
 
-The yellow alpha banner at the top of every page and the `.tbd` styling are
-removed at beta.
+Drop new originals into `incoming/` (gitignored) and re-run
+`python3 tools/process_photos.py` to refresh the WebPs.
+
+The yellow alpha banner and `.tbd` styling are removed at beta.
 
 ## Structure
 
