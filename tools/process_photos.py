@@ -9,6 +9,9 @@ from __future__ import annotations
 import os
 from PIL import Image
 
+LICIA_SRC = os.path.join(os.path.dirname(__file__), "..", "incoming", "LICIA")
+LICIA_APARTMENTS = ("ivory", "walnut", "amber")
+LICIA_SLOTS = 4
 SRC = os.path.join(os.path.dirname(__file__), "..", "incoming", "Vertus Hotel ")
 OUT = os.path.join(os.path.dirname(__file__), "..", "assets", "img")
 
@@ -64,23 +67,51 @@ MAX = {
 }
 
 
-def convert(src_name: str, dest_stem: str) -> None:
-    src_path = os.path.join(SRC, src_name)
-    if not os.path.isfile(src_path):
-        raise SystemExit(f"missing source: {src_path}")
+def convert_from_path(src_path: str, dest_stem: str) -> None:
     im = Image.open(src_path)
     im = im.convert("RGB")
     max_edge = MAX.get(dest_stem, 1400)
     im.thumbnail((max_edge, max_edge), Image.Resampling.LANCZOS)
     out_path = os.path.join(OUT, f"{dest_stem}.webp")
     im.save(out_path, "WEBP", quality=82, method=4)
-    print(f"{src_name} -> {dest_stem}.webp ({im.size[0]}x{im.size[1]})")
+    print(f"{os.path.basename(src_path)} -> {dest_stem}.webp ({im.size[0]}x{im.size[1]})")
+
+
+def convert(src_name: str, dest_stem: str) -> None:
+    src_path = os.path.join(SRC, src_name)
+    if not os.path.isfile(src_path):
+        raise SystemExit(f"missing source: {src_path}")
+    convert_from_path(src_path, dest_stem)
+
+
+def convert_licia() -> None:
+    """Fill LICIA slots from incoming/LICIA/{ivory,walnut,amber}/.
+
+    Drop JPGs into each apartment folder (sorted alphabetically → photo 1–4).
+    """
+    for name in LICIA_APARTMENTS:
+        folder = os.path.join(LICIA_SRC, name)
+        os.makedirs(folder, exist_ok=True)
+        files = sorted(
+            f for f in os.listdir(folder)
+            if f.lower().endswith((".jpg", ".jpeg", ".png", ".webp"))
+        )
+        if not files:
+            print(f"LICIA {name}: drop photos in incoming/LICIA/{name}/")
+            continue
+        for i, src_name in enumerate(files[:LICIA_SLOTS], start=1):
+            convert_from_path(os.path.join(folder, src_name), f"licia-{name}-{i}")
+            svg = os.path.join(OUT, f"licia-{name}-{i}.svg")
+            if os.path.isfile(svg):
+                os.remove(svg)
+                print(f"removed licia-{name}-{i}.svg")
 
 
 def main() -> None:
     os.makedirs(OUT, exist_ok=True)
     for dest, src in MAP.items():
         convert(src, dest)
+    convert_licia()
     # Remove obsolete SVG placeholders that now have real photos
     for obsolete in (
         "hero-home.svg", "exterior-day.svg", "lobby.svg",

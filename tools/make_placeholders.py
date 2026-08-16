@@ -25,6 +25,19 @@ SPECS = [
     ("amenity-spa",      1200,  800, "PHOTO · Spa / wellness",            "#C6BBAE", "#33302B"),
     ("surroundings",     1200,  800, "PHOTO · Neighbourhood",             "#BDB49F", "#33302B"),
     ("map",              1200,  675, "MAP · Embed once address is known", "#E4DED2", "#4A4437"),
+    ("licia-hero",       1600,  900, "PHOTO · LICIA exterior",            "#EDE6DA", "#3A342C"),
+    ("licia-ivory-1",    1200,  800, "PHOTO · Ivory Suites 1",            "#EDE6DA", "#3A342C"),
+    ("licia-ivory-2",    1200,  800, "PHOTO · Ivory Suites 2",            "#E4D8C8", "#3A342C"),
+    ("licia-ivory-3",    1200,  800, "PHOTO · Ivory Suites 3",            "#DDD0BE", "#3A342C"),
+    ("licia-ivory-4",    1200,  800, "PHOTO · Ivory Suites 4",            "#D6C8B4", "#3A342C"),
+    ("licia-walnut-1",   1200,  800, "PHOTO · Walnut 1",                  "#C4B49E", "#3A342C"),
+    ("licia-walnut-2",   1200,  800, "PHOTO · Walnut 2",                  "#B9A88F", "#3A342C"),
+    ("licia-walnut-3",   1200,  800, "PHOTO · Walnut 3",                  "#AE9C80", "#3A342C"),
+    ("licia-walnut-4",   1200,  800, "PHOTO · Walnut 4",                  "#A39072", "#3A342C"),
+    ("licia-amber-1",    1200,  800, "PHOTO · Amber 1",                   "#D4B48A", "#3A342C"),
+    ("licia-amber-2",    1200,  800, "PHOTO · Amber 2",                   "#C9A574", "#3A342C"),
+    ("licia-amber-3",    1200,  800, "PHOTO · Amber 3",                   "#BE9664", "#3A342C"),
+    ("licia-amber-4",    1200,  800, "PHOTO · Amber 4",                   "#B38754", "#3A342C"),
 ]
 
 SVG = """<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
