@@ -43,7 +43,7 @@ The yellow alpha banner and `.tbd` styling are removed at beta.
 
 - `schema.org/Hotel` JSON-LD on the home page (TBD fields marked)
 - Unique title/description + OpenGraph tags per page
-- `sitemap.xml` / `robots.txt` with a `TBD-DOMAIN.example` placeholder domain
+- `sitemap.xml` / `robots.txt` on `vertushotelandsuites.com`
 - Enquiry form is UI-only; connects to Netlify Forms or Formspree at Live phase
 
 ## Waiting on (plan §6)

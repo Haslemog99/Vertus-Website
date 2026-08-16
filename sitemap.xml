@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Alpha placeholder: replace TBD-DOMAIN.example with the real domain at Live phase -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://TBD-DOMAIN.example/</loc><priority>1.0</priority></url>
-  <url><loc>https://TBD-DOMAIN.example/rooms.html</loc><priority>0.9</priority></url>
-  <url><loc>https://TBD-DOMAIN.example/contact.html</loc><priority>0.9</priority></url>
-  <url><loc>https://TBD-DOMAIN.example/dining.html</loc><priority>0.7</priority></url>
-  <url><loc>https://TBD-DOMAIN.example/menu.html</loc><priority>0.7</priority></url>
-  <url><loc>https://TBD-DOMAIN.example/licia.html</loc><priority>0.95</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://TBD-DOMAIN.example/gallery.html</loc><priority>0.6</priority></url>
-  <url><loc>https://TBD-DOMAIN.example/about.html</loc><priority>0.5</priority></url>
+  <url><loc>https://vertushotelandsuites.com/</loc><priority>1.0</priority></url>
+  <url><loc>https://vertushotelandsuites.com/rooms.html</loc><priority>0.9</priority></url>
+  <url><loc>https://vertushotelandsuites.com/contact.html</loc><priority>0.9</priority></url>
+  <url><loc>https://vertushotelandsuites.com/dining.html</loc><priority>0.7</priority></url>
+  <url><loc>https://vertushotelandsuites.com/menu.html</loc><priority>0.7</priority></url>
+  <url><loc>https://vertushotelandsuites.com/licia.html</loc><priority>0.95</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://vertushotelandsuites.com/gallery.html</loc><priority>0.6</priority></url>
+  <url><loc>https://vertushotelandsuites.com/about.html</loc><priority>0.5</priority></url>
 </urlset>
