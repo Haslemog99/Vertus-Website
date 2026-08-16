@@ -1,4 +1,4 @@
-/* VERTUS — alpha shared script: nav toggle, gallery lightbox, enquiry form stub,
+/* VERTUS — shared script: nav toggle, gallery lightbox, enquiry form,
    reveal-on-scroll. No dependencies. */
 
 (function () {
@@ -62,7 +62,7 @@
     });
   }
 
-  /* Enquiry / reserve forms (alpha stub — wired at Live phase) ------------ */
+  /* Enquiry / reserve forms ---------------------------------------------- */
   document.querySelectorAll(".enquiry-form").forEach(function (form) {
     var checkin = form.querySelector("#checkin");
     var checkout = form.querySelector("#checkout");
@@ -87,7 +87,7 @@
       success.className = "form-success";
       success.setAttribute("role", "status");
       success.textContent = form.dataset.success
-        || "Alpha preview: your enquiry was not sent anywhere yet. At the Live phase this form connects to the hotel's inbox via a form relay service.";
+        || "Thank you. Call or WhatsApp +234 912 888 8820 or email info@vertushotelandsuites.com to confirm your stay.";
       form.replaceWith(success);
       success.scrollIntoView({ behavior: "smooth", block: "center" });
     });

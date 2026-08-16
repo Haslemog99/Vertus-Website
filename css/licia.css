@@ -257,13 +257,6 @@ img { max-width: 100%; height: auto; display: block; }
   margin: 0 0 1.1rem;
 }
 
-.tbd {
-  background: #fff3c4;
-  border-bottom: 2px dotted #b78f00;
-  padding-inline: 0.2em;
-  color: #5c4700;
-}
-
 .licia-btn {
   display: inline-block;
   padding: 0.8rem 1.4rem;

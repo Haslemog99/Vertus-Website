@@ -133,16 +133,6 @@ a { color: var(--accent); transition: color 0.2s ease; }
 
 .section--accent .lede { color: rgba(240, 238, 234, 0.82); }
 
-/* Placeholder marker — flags facts still pending */
-.tbd {
-  background: #fff3c4;
-  border-bottom: 2px dotted #b78f00;
-  padding-inline: 0.2em;
-  border-radius: 2px;
-  font-style: normal;
-  color: #5c4700;
-}
-
 /* --------------------------------------------------------------------------
    Buttons
    -------------------------------------------------------------------------- */
@@ -1086,15 +1076,3 @@ a { color: var(--accent); transition: color 0.2s ease; }
   .grid .reveal:nth-child(3) { transition-delay: 0.16s; }
 }
 
-/* --------------------------------------------------------------------------
-   Alpha banner — removed at beta
-   -------------------------------------------------------------------------- */
-
-.alpha-note {
-  background: linear-gradient(90deg, #fff1c2, #ffe8a3);
-  color: #5c4700;
-  text-align: center;
-  font-size: 0.78rem;
-  letter-spacing: 0.02em;
-  padding: 0.5rem var(--pad);
-}
